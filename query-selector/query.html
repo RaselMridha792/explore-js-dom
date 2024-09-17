@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exploring query selector</title>
+    
+</head>
+<body>
+    <header>
+        <h1>fruits</h1>
+        <ul class="fruits-container">
+            <li>banana</li>
+            <li>banana</li>
+            <li>banana</li>
+            <li>banana</li>
+        </ul>
+    </header>
+    <script src="../dom.js"></script>
+    <script>
+       const fruits = document.querySelectorAll('.fruits-container li');
+        for(fruit of fruits){
+            console.log(fruit);
+        }
+    </script>
+</body>
+</html>
